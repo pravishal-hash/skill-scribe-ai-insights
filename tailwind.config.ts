@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,12 +26,21 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#7E69AB',
+					light: '#9b87f5',
+					dark: '#604d8d',
+					foreground: '#ffffff'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#0EA5E9',
+					light: '#38bdf8',
+					dark: '#0369a1',
+					foreground: '#ffffff'
+				},
+				skill: {
+					resume: '#9b87f5',
+					certification: '#0EA5E9',
+					combined: '#7E69AB'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -41,8 +51,8 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: '#F1F0FB',
+					foreground: '#1A1F2C'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -84,11 +94,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-opacity': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-opacity 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			}
 		}
 	},
