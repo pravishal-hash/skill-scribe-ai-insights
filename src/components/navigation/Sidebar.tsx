@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, Dashboard, FileText, Settings, Users, ChartPie, Badge } from "lucide-react";
+import { ChevronLeft, LayoutDashboard, FileText, Settings, Users, ChartPie, Badge } from "lucide-react";
 
 export function Sidebar() {
   const [collapsed, setCollapsed] = useState(false);
@@ -13,7 +13,7 @@ export function Sidebar() {
     {
       name: "Dashboard",
       path: "/dashboard",
-      icon: Dashboard
+      icon: LayoutDashboard
     },
     {
       name: "Skills Management",
